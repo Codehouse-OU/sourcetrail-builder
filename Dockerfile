@@ -21,5 +21,5 @@ RUN clang --version
 
 # Install SDKMAN
 RUN curl -s "https://get.sdkman.io" | bash
-RUN source /root/.sdkman/bin/sdkman-init.sh && sdk install java 21.0.2-tem
+RUN bash -c "source /root/.sdkman/bin/sdkman-init.sh && sdk install java 21.0.2-tem"
 RUN java -version
